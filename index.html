@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Schatzsuche</title>
+		<script type="text/javascript" src="typed.min.js"></script>
+		<style type="text/css">
+			/* background image */
+			body, html {
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+			}
+			body {
+				background:url('background.jpg') no-repeat 95% 50%;;
+				background-size:cover;
+				background-color:#000;
+			}
+
+			/* text box */
+			.text {
+				position:relative;
+				top:40%;
+				margin:0 10%;
+				padding:1em;
+				border-radius:1em;
+				background:rgba(0,0,0,0.4);
+				color:#EEE;
+				font-size:24pt;
+				text-align:center;
+				font-family: 'Sedgwick Ave Display', cursive;
+			}
+
+			/* cursor blinking */
+			.typed-cursor {
+		        opacity: 1;
+				animation: blink .7s infinite;
+		    }
+		    @keyframes blink {
+				 0% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet"> 
+	</head>
+	<body>
+		<div class="text">
+			<span id="typed"></span>
+		</div>
+		<script>
+			var typed = new Typed("#typed", {
+				strings: ['N 61°51\'07.4" E 10°13\'12.9" ?', 'N 14°49\'21.5" E 35°18\'01.2" ??', 'N 14°34\'59.2" E 91°11\'10.8" ???', 'Die richtigen Koordinaten erfährst du mit 18.', 'Heb dir dazu gut den Code auf der Karte auf!', 'Gucken von Eltern verboten :-)'],
+				typeSpeed: 100,
+				backSpeed: 0,
+				backDelay: 4000,
+				startDelay: 1000,
+				loop: true
+			});
+		</script>
+	</body>
+</html>
